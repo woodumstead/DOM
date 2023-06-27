@@ -1,50 +1,43 @@
-/*
+const numberField1 = document.getElementById("number1"); //Grab input field for Number 1
+const numberField2 = document.getElementById("number2"); //Grab input field for Number 2
+const result = document.getElementById("result"); //Grab result span for answer
+
+//Add button functionality
+document.getElementById("add").addEventListener("click", () => {
+    const num1 = parseInt(numberField1.value); //Get the number 1 input field value and convert it to a number
+    const num2 = parseInt(numberField2.value); //Get the number 2 input field value and convert it to a number
     
-    Create the following elements:
+    const sum = num1 + num2; //Add the numbers together
 
+    result.innerText = sum; //Show the sum in the result span
+})
 
-two number input fields
+//Subtract button functionality
+document.getElementById("subtract").addEventListener("click", () => {
+    const num1 = parseInt(numberField1.value); //Get the number 1 input field value and convert it to a number
+    const num2 = parseInt(numberField2.value); //Get the number 2 input field value and convert it to a number
+    
+    const difference = num1 - num2; //Subtract the numbers
 
-5 buttons corresponding to the 5 basic arithmetic operations (addition, subtraction, multiplication, division)
+    result.innerText = difference; //Show the difference in the result span
+})
 
-paragraph with span for result
+//Multiply button functionality
+document.getElementById("multiply").addEventListener("click", () => {
+    const num1 = parseInt(numberField1.value); //Get the number 1 input field value and convert it to a number
+    const num2 = parseInt(numberField2.value); //Get the number 2 input field value and convert it to a number
+    
+    const answer = num1 * num2; //Multiply the numbers
 
+    result.innerText = answer; //Show the answer in the result span
+})
 
-Use the necessary query selectors and attributes to perform the necessary operation between the two numbers when a corresponding button is pressed.
+//Divide button functionality
+document.getElementById("divide").addEventListener("click", () => {
+    const num1 = parseInt(numberField1.value); //Get the number 1 input field value and convert it to a number
+    const num2 = parseInt(numberField2.value); //Get the number 2 input field value and convert it to a number
+    
+    const answer = num1 / num2; //Divide the numbers
 
-*/
-
-
-
-
-
-let a = document.createElement("input");
-i.setAttribute("type", "number");
-
-let b = document.createElement("input");
-t.setAttribute("type", "number")
-
-let x = 10;
-let y = 6;
-let z = 5;
-
-let add = document.createElement("input")
-add.setAttribute("type", "button");
-
-let subtract = document.createElement("input");
-subtract.setAttribute("type", "button");
-
-let multiplication = document.createElement("input");
-multiplication = document.createAttribute("type", "button");
-
-let division = document.createElement("input");
-division = document.createAttribute("type", "button")
-
-let p = document.createElement("p");
-const textnode = document.createTextNode("paragraph");
-
-function appendFunction() {
-
-    let sp = ducument.createElement('span');
-    document.getElementById("paragraph").appendChild(p);
-}
+    result.innerText = answer; //Show the answer in the result span
+})
