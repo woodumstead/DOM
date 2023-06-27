@@ -1,4 +1,4 @@
-<!--
+/*
     
     Create the following elements:
 
@@ -12,7 +12,7 @@ paragraph with span for result
 
 Use the necessary query selectors and attributes to perform the necessary operation between the two numbers when a corresponding button is pressed.
 
--->
+*/
 
 
 
